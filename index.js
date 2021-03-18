@@ -118,12 +118,18 @@ Use the getReviewByIndex function below to do the following:
   For example: getReviewByIndex(reviews,0) would return: "Daniela gave the restaurant a 5 star review, and their feedback was: Beautiful atmosphere and wonderful vegan options!"
 */
 
-
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(array, index) {
+  return `${array[index].name} gave the restaurant a ${array[index].rating} star review, and their feedback was: ${array[index].feedback}`;
 }
 
-
+// function getReviewByIndex(array, index) {
+//   for(let i = 0; i < array.length; i++){
+//     if(array[i].includes(index)){
+//       return this.name + ' gave the restaurant a ' + this.rating + ' star review, and their feedback was: ' + this.feedback;
+//     }
+//   }
+// }
+console.log("Task 6", getReviewByIndex(reviews, 0));
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -138,9 +144,11 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
-} 
+function getLastReview(array) {
+  return `${array[array.length - 1].name} gave the restaurant a ${array[array.length -1].rating} star review, and their feedback was: ${array[array.length - 1].feedback}`;
+}
+
+console.log("Task 7", getLastReview(reviews));
 
 
 
